@@ -1,0 +1,257 @@
+body {
+    background-color: whitesmoke;
+    max-height: 100vh;
+}
+
+header {
+    background-color: rgb(13, 155, 13);
+    text-align: right;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: yellow;
+}
+
+nav a:hover {
+    color: rgb(24, 107, 24);
+}
+
+form a:hover {
+    color: black;
+}
+
+ul a:hover {
+    color: rgb(90, 86, 86);
+}
+
+header>a {
+    margin-right: 25px;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: 15px;
+}
+
+.logo {
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 90px;
+}
+
+#img {
+    position: relative;
+    top: 20px;
+    left: 140px;
+}
+
+nav {
+    position: relative;
+    top: 30px;
+    left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    word-spacing: 15px;
+    text-transform: uppercase;
+}
+
+nav > a {
+    color: rgba(0, 0, 0, 0.726);
+    font-weight: 550;
+}
+
+.grid-container {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 400px 400px;
+    gap: 50px;
+    background-color: white;
+    height: 500px;
+    margin-top: 70px;
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.grid-items {
+    padding-top: 30px;
+}
+
+h3 {
+    color: rgb(37, 189, 37);
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(201, 199, 199);
+}
+
+button {
+    background-color: rgb(11, 136, 11);
+    width: 410px;
+    height: 40px;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(24, 107, 24);
+}
+
+.grid-items a {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+.usefull-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 60vh;
+}
+
+h4 {
+    color: rgb(155, 155, 41);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-left: 62px;
+}
+
+ul hr {
+    border: 0.5px dotted;
+}
+
+ul {
+    margin: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    color: white;
+}
+
+footer {
+    background-color: rgb(13, 155, 13);
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 10px;
+}
+
+footer>p { 
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+        /* Adjust font size for better readability on smaller screens */
+    }
+
+    .logo {
+        flex-direction: row;
+        /* Stack logo and navigation vertically */
+        align-items: center;
+        height: fit-content;
+        /* Center logo and navigation items */
+    }
+
+    #img {
+        margin-left: 0;
+        position: static;
+        /* Reset left margin for logo image */
+    }
+
+    
+
+    header > a {
+        margin-top: 5px;
+        height: fit-content;
+        font-size: 12px
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        /* Reset position */
+        text-align: justify;
+        /* Center navigation links */
+        margin-top: 10px;
+        margin-left: 40px;
+        /* Adjust top margin */
+        left: 0;
+        /* Reset left offset */
+    }
+
+    nav > a {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Stack grid items vertically */
+        gap: 20px;
+        /* Reduce gap between grid items */
+        margin: 40px auto;
+        /* Center grid container */
+        width: 90%;
+        height: auto;
+        /* Adjust width to fit smaller screens */
+    }
+
+    .usefull-container {
+        grid-template-columns: 1fr;
+        /* Stack useful items vertically */
+        gap: 20px;
+        /* Reduce gap between useful items */
+        margin-top: 20px;
+        /* Adjust top margin */
+        height: auto;
+        /* Allow container to expand based on content */
+    }
+}

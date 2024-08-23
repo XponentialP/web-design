@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+.container {
+    width: 750px;
+    /* height: 300px; */
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    /* display: flex; */
+    max-height: fit-content;
+    border-radius: 20px;
+}
+
+.todo {
+    max-height: fit-content;
+}
+
+.input-error {
+    color: red;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.todo h2 {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input {
+    padding-left: 50px;
+    display: flex;
+    gap: 100px;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.btn {
+    width: 90px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(220, 151, 151);
+    color: gray
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(Media/unchecked-icon.jpeg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(Media/checked-icon.jpeg);
+}
+
+ul li span {
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul li span:hover {
+    color: rgb(180, 166, 166);
+}

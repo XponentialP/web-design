@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Intrest Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>intrest Calculator</h1>
+        <form>
+            <label for="principal">Principal Amount</label><br>
+            <input type="text" id="principal" placeholder="Input Amount">
+            <p class="principal-error"></p>
+
+            <label for="intrest">Intrest Rate</label><br>
+            <input type="text" id="rate" placeholder="Input Rate in %">
+            <p class="intrest-error"></p>
+
+            <label for="years">Years</label><br>
+            <input type="text" id="years" placeholder="Input years">
+            <p class="years-error"></p>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+            <p class="intrest-total"></p>
+        </form>
+    </div>
+
+
+
+
+  <script src="./script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+    text-align: center;
+    height: 100vh;
+    background-color: whitesmoke;
+
+}
+
+.header {
+    background-color: aqua;
+    height: 400px;
+}
+
+nav {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 50px;
+    word-spacing: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(0, 0, 255, 0.26);
+}
+
+.search {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.btn-search {
+    width: 80px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.904);
+    color: black;
+    font-weight: bold;
+}
+
+.pass {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: aqua;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 15px;
+
+}
+
+.bio {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.features-heading {
+    color: aqua;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: blue;
+    font-size: large;
+    margin-bottom: 0;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.text {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 30px;
+    margin-right: 3px;
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.get-in-touch {
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.562);
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    background-color: aqua;
+    height: 100px;
+    padding-top: 80px;
+    word-spacing: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.footer-text {
+    color: rgb(241, 222, 222);
+    margin-top: 40px;
+}
+
+.see-more {
+    color: rgb(47, 47, 219);
+    font-size: 15px;
+    text-align: left;
+}
+
+.see-more:hover {
+    color: grey;
+}
+
+h1 {
+    display: block;
+    padding-top: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+.svg-link:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Add your responsive styles here */
+    .header {
+      height: 300px; /* Adjust header height for smaller screens */
+    }
+  
+    nav {
+      padding-left: 20px; /* Adjust padding for navigation links */
+      padding-top: 20px; /* Adjust padding for navigation links */
+      font-size: smaller;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
+      gap: 20px; /* Adjust gap between grid items */
+      margin: 20px auto; /* Center grid container and adjust margin */
+      padding: 20px; /* Adjust padding for grid container */
+      margin-left: 10px; /* Adjust margin for grid container */
+      margin-right: 10px; /* Adjust margin for grid container */
+    }
+  
+    .features-heading {
+      font-size: 30px; /* Adjust font size for heading */
+      margin-bottom: 10px; /* Adjust margin for heading */
+    }
+  
+    .text {
+      font-size: 16px; /* Adjust font size for text */
+      margin-left: 10px; /* Adjust margin for text */
+      margin-right: 10px; /* Adjust margin for text */
+    }
+  
+    .btn {
+      width: 120px; /* Adjust button width */
+      height: 40px; /* Adjust button height */
+      font-size: 16px; /* Adjust font size for button */
+    }
+  
+    footer {
+      padding-top: 30px; /* Adjust padding for footer */
+      word-spacing: 10px; /* Adjust spacing between footer links */
+    }
+  }
+  

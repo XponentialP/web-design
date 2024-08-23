@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    align-items: center;
+    padding: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    gap: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: gray;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+span {
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+    height: 3px;
+}
+
+.nav-links {
+    /* background-color: rgb(51, 42, 42); */
+    width: fit-content;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    max-height: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.nav-links.open {
+    max-height: 800px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(7px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(7px, -5px);
+}

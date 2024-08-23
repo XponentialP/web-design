@@ -1,0 +1,155 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        line-height: 3.5rem;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .pics {
+        width: 250px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .second-section {
+        padding-top: 3rem;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .third-para {
+        color: rgb(158, 150, 139);
+        font-size: 1rem;
+        /* font-weight: bold; */
+    }
+
+    .about-pics {
+        width: 250px;
+        padding-top: 0;
+    }
+
+    .second-head {
+        font-size: 2rem;
+        /* letter-spacing: 5px; */
+    }
+
+    .first-para {
+        color: rgb(158, 150, 139);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .first-head {
+        font-size: 2rem;
+    }
+
+    .second-para {
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(78, 75, 71);
+    }
+    
+    .exp {
+        display: flex;
+        flex-direction: column;
+        /* padding: 2rem; */
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .card1, .card2 {
+        width: 100px;
+        height: 120px;
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .experiences {
+        max-height: fit-content;
+        font-size: small;
+        text-align: center;
+    }
+
+    .experience-container {
+        font-size: medium;
+        width: 320px;
+    }
+
+    .experience-heading {
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+
+    }
+
+    .exp-para {
+        color: rgb(158, 150, 139);
+        font-size: 1rem;
+    }
+    
+    .exp-heading {
+        font-size: 2rem;
+    }
+
+    #exp-cont {
+        height: 250px;
+    }
+
+    .project-heading {
+        text-align: center;
+        padding-top: 9rem;
+        /* padding-bottom: 30px; */
+    }
+    
+    .project-para {
+        color: rgb(158, 150, 139);
+        font-size: 1rem;
+        padding-bottom: 4px;
+    }
+    
+    .project-head {
+        font-size: 2rem;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0 auto;
+        
+    }
+
+    .project-image {
+        width: 300px;
+    }
+
+    .done-project {
+        max-width: fit-content;
+    }
+
+    .done-projects {
+        max-width: fit-content;
+    }
+
+    .footer-section {
+        display: block;
+        text-align: center;
+    }
+}

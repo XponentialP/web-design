@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">Prince Moses</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="mailto:chukwuprince498@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="./index.html">Prince Moses</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="mailto:chukwuprince498@gmail.com" onclick="toggleMenu()"
+              >Contact</a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="profile">
+      <div class="profile-image">
+        <img
+          class="pics"
+          src="./Media/profile-picture.jpg"
+          alt="Prince Moses Profile Pics"
+          style="border-radius: 50%"
+          width="400px"
+        />
+      </div>
+      <div class="text-section">
+        <p class="first-para">Hello, I'm</p>
+        <h1 class="first-head">Prince Moses</h1>
+        <p class="second-para">Frontend Developer</p>
+        <a href="./Media/My Resume.pdf"
+          ><button class="btn-cv">View CV</button></a
+        >
+        <a href="mailto:chukwuprince498@gmail.com"
+          ><button class="btn-contact">Contact Info</button><br
+        /></a>
+        <div class="contact-icons">
+          <a
+            href="https://www.linkedin.com/messaging/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAWhgLFYRSdK9DF85UM3rcA%3D%3D"
+            target="_blank"
+            ><img src="./Media/linkedin.png" alt="linkedin pics" width="30px"
+          /></a>
+          <a href="https://github.com/" target="_blank"
+            ><img src="./Media/github.png" alt="github pics" width="30px"
+          /></a>
+          <a href="https://wa.me/+2348139748033"
+            ><img src="./Media/whatsapp.jpeg" alt="whatsapp" width="50px"
+          /></a>
+          <a href="https://m.me/prince.chukwu.75286100"
+            ><img src="./Media/mesenger.jpeg" alt="messenger" width="55px"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="second-section">
+        <p class="third-para">Get To Know More</p>
+        <h1 class="second-head">About Me</h1>
+      </div>
+      <div class="about-container">
+        <img
+          class="about-pics"
+          src="./Media/about-me-pics.jpg"
+          width="350px"
+          style="border-radius: 20px"
+        />
+        <div class="cards">
+          <div class="card1">
+            <img src="./Media/experience.png" width="30px" alt="experience" />
+            <h3>Experience</h3>
+            <p>
+              1 Year<br />
+              Frontend Development
+            </p>
+          </div>
+          <div class="card2">
+            <img src="./Media/education.png" width="30px" alt="education" />
+            <h3>Education</h3>
+            <p>
+              OND National Diploma<br />
+              Bachelor In Engineering
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <div class="experience-heading">
+        <p class="exp-para">Explore My</p>
+        <h1 class="exp-heading">Experience</h1>
+      </div>
+      <div class="exp">
+        <div class="experience-container">
+          <h2>Frontend Development</h2>
+
+          <div class="experiences">
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>HTML</h4>
+              <p>Experienced</p>
+            </div>
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>CSS</h4>
+              <p>Experienced</p>
+            </div>
+            <!-- <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>SASS</h4>
+              <p>Beginner</p>
+            </div> -->
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>JAVASCRIPT</h4>
+              <p>Intermediate</p>
+            </div>
+            <!-- <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>TypeScript</h4>
+              <p>Basic</p>
+            </div> -->
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>UI/UX</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container" id="exp-cont">
+          <h2>Backend Development</h2>
+
+          <div class="experiences">
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>PostgreSQL</h4>
+              <p>Basic</p>
+            </div>
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>Node JS</h4>
+              <p>Basic</p>
+            </div>
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>Express JS</h4>
+              <p>Basic</p>
+            </div>
+            <div class="experience-tags">
+              <img src="./Media/checkmark.png" alt="checkmark" width="30px" />
+              <h4>Git</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project-heading">
+        <p class="project-para">Browse My Recent</p>
+        <h1 class="project-head">Projects</h1>
+      </div>
+      <div class="projects-list">
+        <div class="done-project">
+          <img
+            class="project-image"
+            src="./Media/project1.jpg"
+            alt="my first project"
+            width="400px"
+          />
+          <h2 class="project-down-heading">Project One</h2>
+          <button class="btn-git">GitHub</button>
+          <a href="https://xponentialp.github.io/mouau/"
+            ><button class="btn-live-demo">Live Demo</button></a
+          >
+        </div>
+        <div class="done-project">
+          <img
+            class="project-image"
+            src="./Media/project2.jpg"
+            alt="my second project"
+            width="400px"
+          />
+          <h2 class="project-down-heading">Project Two</h2>
+          <button class="btn-git">GitHub</button>
+          <a href="https://xponentialp.github.io/move-with-joy/"
+            ><button class="btn-live-demo">Live Demo</button></a
+          >
+        </div>
+      </div>
+      <div class="done-projects">
+        <img
+          class="project-image"
+          src="./Media/project3.jpg"
+          alt="my third project"
+          width="850px"
+        />
+        <h2 class="project-down-heading">Project Three</h2>
+        <button class="btn-git">GitHub</button>
+        <a href="https://xponentialp.github.io/tiny-dog/"
+          ><button class="btn-live-demo">Live Demo</button></a
+        >
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <div class="footer-heading">
+        <p class="footer-para">Get In Touch</p>
+        <h1 class="footer-heading">Contact Me</h1>
+      </div>
+      <div class="contact-image-links">
+        <a href="mailto:chukwuprinc498@gmail.com"
+          ><img src="./Media/email.png" alt="email" width="40px"
+        /></a>
+        <a
+          href="https://www.linkedin.com/messaging/?&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAWhgLFYRSdK9DF85UM3rcA%3D%3D"
+        >
+          <img src="./Media/linkedin.png" alt="linkedin" width="40px"
+        /></a>
+        <a href="https://m.me/prince.chukwu.75286100"
+          ><img src="./Media/mesenger.jpeg" alt="messenger" width="55px"
+        /></a>
+        <a href="https://wa.me/+2348139748033"
+          ><img src="./Media/whatsapp.jpeg" alt="whatsapp" width="50px"
+        /></a>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="mailto:chukwuprince498@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-copyright-para">
+          Copyright © 2024 Prince Moses. All Rights Reserved
+        </p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(./images/banner-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(0, 0%, 94%);
+    
+}
+
+.desktop-nav {
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    max-width: 1100px;
+    height: 70px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: large;
+    font-weight: 500;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+a {
+    color: white;
+    position: relative;
+    top: 1.4rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: rgb(185, 83, 46);
+    transition: all 0.3s ease-in-out;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: flex;
+    width: max-content;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    left: 160px;
+}
+
+span {
+    background-color: whitesmoke;
+    height: 7px;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: flex;
+    position: absolute;
+    left: 40px;
+}
+
+.dp {
+    padding-bottom: 0;
+}
+
+.dp .dpm {
+    cursor: pointer;
+    width: 130px;
+
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 6px;
+   
+    color: white;
+    background-color: rgb(77, 69, 69);
+}
+
+.dp .dpm ul.dropdown {
+    width: 86%;
+    top: 45px;
+    left: 0;
+    background: whitesmoke;
+    position: absolute;
+    display: none;
+    
+
+    padding: 10px;
+}
+
+.dp .dpm ul.dropdown li {
+    padding: 8px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+}
+
+.dp .dpm ul.dropdown li:hover {
+    background-color: gray;
+   
+    transition: all 0.3s ease-in-out;
+}
+
+.dp .dpm:hover {
+    background-color: gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.dp .dpm:hover ul.dropdown {
+    display: block;  
+}
+
+#search {
+    width: 500px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: white;
+    border: none;
+    position: relative;
+    left: 180px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown-menu2 {
+    display: flex;
+    position: absolute;
+    left: 750px;
+}
+
+.dp2 {
+    padding-bottom: 0;
+}
+
+.dp2 .dpm2 {
+    cursor: pointer;
+    width: 110px;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+}
+
+.dp2 .dpm2 ul.dropdown2 {
+    width: 86%;
+    top: 45px;
+    left: 0;
+    background: whitesmoke;
+    position: absolute;
+    display: none;
+    padding: 10px;
+}
+
+.dp2 .dpm2 ul.dropdown2 li {
+    padding: 8px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+}
+
+.dp2 .dpm2 ul.dropdown2 li:hover {
+    background-color: rgb(206, 183, 183);
+    transition: all 0.3s ease-in-out;
+}
+
+.dp2 .dpm2:hover {
+    background-color: rgb(206, 183, 183);
+    transition: all 0.3s ease-in-out;
+}
+
+.dp2 .dpm2:hover ul.dropdown2 {
+    display: block;  
+}
+
+.list {
+    position: relative;
+    left: 330px;
+}
+
+.list span {
+    background: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 0 5px 0 5px
+}
+
+.list span:hover {
+    color: rgb(185, 83, 46);
+    font-weight: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.list a {
+    color: white;
+    position: relative;
+    top: 0;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color:rgb(185, 83, 46);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    background:rgb(185, 83, 46);
+    width: 40px;
+    border-radius: 5px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.search-icon-image {
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+/* .product-carousel {
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+}
+
+.products {
+    display: flex;
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.products-list {
+    text-align: center;
+    flex: 1 1 100%;
+    min-width: 100%;
+    width: 300%;
+}
+
+.products-container {
+    display: flex;
+    height: 540px;
+    gap: 2rem;
+    justify-content: center;
+    
+    overflow: hidden;
+} */
+
+.product-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    /* white-space: nowrap; */
+    /* gap: 3rem;
+    justify-content: center; */
+    transition: transform 0.5s ease-in-out;
+}
+
+.products-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.products {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.products-list img {
+    /* display: block; */
+    margin: 0 auto;
+}
+
+/* .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+} */
+
+
+.hero-heading {
+    text-align: center;
+    font-weight: bolder;
+    color: hsla(0, 0%, 0%, 0.767);
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.price-tag {
+    color: red;
+    padding-top: 0;
+    margin-top: 2px;
+}
+
+.prices {
+    color: black;
+    background: none;
+}
+
+h5 {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.buy-tag span {
+    background: none;
+    margin-left: 6rem;
+    padding-left: 6rem;
+    color: black;
+    font-weight: normal;
+}
+
+.buy-tag {
+    color: rgb(185, 83, 46);
+    font-weight: bold;
+}
+
+.buy-tag a {
+    color: rgb(185, 83, 46);
+    position: static;
+}
+
+.buy-tag span a {
+    color: black;
+}
+.buy-tag span a:hover {
+    color: rgb(185, 83, 46);
+    text-decoration: none;
+}
+
+.buy-tag a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.next-button button {
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.next-button button:hover {
+    background: rgb(185, 83, 46);  
+}
+
+.next-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel {
+    position: relative;
+    top: 2.9rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 150%; */
+    overflow: hidden;
+    /* left: 250px; */
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slide {
+    min-width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateX(0%);
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    /* padding: 10px; */
+    cursor: pointer;
+  }
+
+  .prev-slide:hover, .next-slide:hover {
+    color: white;
+  }
+
+  .prev-slide {
+    left: 90px;
+    top: 5rem;
+  }
+  
+  .next-slide {
+    right: 90px;
+    top: 5rem;
+  }
+
+.buy-button-container {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.buy-button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: 750;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.buy-button:hover {
+    background: rgb(185, 83, 46);
+}
+
+.footer-section {
+    background: hsl(0, 1%, 13%);
+    height: 450px;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+}
+
+.footer-head {
+    color: white;
+    font-size: 2.7rem;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+#email {
+    width:600px;
+    height: 40px;
+    padding-left: 1rem;
+    background: hsl(0, 1%, 13%);
+    border: none;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-left: 7rem;
+    margin-right: 5rem;
+}
+
+.footer-nav li a:hover {
+    text-decoration: none;
+}
+
+.footer-span {
+    background: none;
+    font-weight: normal;
+    color: rgb(185, 83, 46);
+    font-size: 1.1rem;
+}
+
+.footer-span a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-span a {
+    color: rgb(185, 83, 46);
+    position: relative;
+    top: 0;
+    left: -75px;
+}
+
+hr {
+    width: 750px;
+}
+
+.footer-paragraph, .footer-statement {
+    color: white;
+    padding: 0.7rem;
+    font-size: 1.15rem;
+}
+
+.footer-paragraph a:hover {
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+    font-weight: 500;
+    transition: none;
+}
+
+.footer-paragraph a {
+    position: static;
+}
+
+#email:focus {
+    outline: none;
+    background-color: none;
+    border: none;
+}

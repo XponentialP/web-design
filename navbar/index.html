@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav-Bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="logo">
+        <h1>Xponential</h1>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Projects</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>Experience</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="hamburger-nav">
+      <div class="logo">
+        <h1>Xponential</h1>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#" onclick="toggleMenu()"><li>Home</li></a>
+          <a href="#" onclick="toggleMenu()"><li>About</li></a>
+          <a href="#" onclick="toggleMenu()"><li>Projects</li></a>
+          <a href="#" onclick="toggleMenu()"><li>Contact</li></a>
+          <a href="#" onclick="toggleMenu()"><li>Experience</li></a>
+        </div>
+      </div>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
