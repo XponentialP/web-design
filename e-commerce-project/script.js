@@ -1,20 +1,8 @@
 const slides = document.querySelectorAll('.slide');
-const fashionSlides = document.querySelectorAll('.fashion');
-const electronicSlides = document.querySelectorAll('.electronic');
-const jewelrySlides = document.querySelectorAll('.jewelry');
 const prevButton = document.querySelector('.prev-slide');
 const nextButton = document.querySelector('.next-slide');
-const fashionPrev = document.querySelector('.fashion-prev');
-const fashionNext = document.querySelector('.fashion-next');
-const electronicPrev = document.querySelector('.electronic-prev');
-const electronicNext = document.querySelector('.electronic-next');
-const jewelryPrev = document.querySelector('.jewelry-prev');
-const jewelryNext = document.querySelector('.jewelry-next');
-let currentSlide = 0;
-let currentFashionSlides = 0;
-let currentElectronicSlides = 0;
-let currentJewelrySlides = 0;
 
+let currentSlide = 0;
 
 const autoplayInterval = 3000; // Autoplay interval in milliseconds
 
@@ -33,6 +21,134 @@ nextButton.addEventListener('click', () => {
   clearInterval(autoplayTimer);
   autoplayTimer = setInterval(autoplay, autoplayInterval);
 });
+
+function updateSlides() {
+  const translateX = -currentSlide * 100;
+  document.querySelector('.slides').style.transform = `translateX(${translateX}%)`;
+  
+}
+
+function autoplay() {
+  currentSlide++;
+  if (currentSlide >= slides.length) currentSlide = 0;
+  updateSlides();
+}
+
+let autoplayTimer = setInterval(autoplay, autoplayInterval); // Start autoplay
+
+// function for hamburger display
+
+function toggleMenu() {
+  const menu = document.querySelector('.menu-links');
+  const icon = document.querySelector('.hamburger-icon');
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
+// function toggleMenu() {
+//   const menu = document.querySelector('.menu-links');
+//   const icon = document.querySelector('.hamburger-icon');
+  
+//   if (menu.classList.contains("open")) {
+//     menu.classList.remove("open");
+//     setTimeout(() => {
+//       menu.style.display = "none";
+//     }, 1400); // Matches the transition duration
+//   } else {
+//     menu.style.display = "block";
+//     setTimeout(() => {
+//       menu.classList.add("open");
+//     }, 10); // Small delay to trigger the transition
+//   }
+
+//   icon.classList.toggle("open");
+// }
+
+
+// function for the products carousel
+
+// function setupCarousel(carouselClass, prevBtnClass, nextBtnClass) {
+//   const carousel = document.querySelectorAll(carouselClass);
+//   const slide = carousel.children;
+//   const prevSlide = document.querySelectorAll(prevBtnClass);
+//   const nextSlide = document.querySelectorAll(nextBtnClass);
+
+//   let currentIndex = 0;
+
+//   prevSlide.addEventListener('click', () => {
+//     currentIndex--;
+//     if(currentIndex < 0) currentIndex = slide.length - 1;
+//     updateCarousel();
+//   });
+
+//   nextSlide.addEventListener('click', () => {
+//     currentIndex++;
+//     if(currentIndex >= slide.length) currentIndex = 0;
+//     updateCarousel();
+//   });
+
+//   function updateCarousel() {
+//     const translateX = -currentIndex * 100;
+//     carousel.style.transform = `translateX(${translateX}%)`;
+//   }
+// }
+
+// // intialize the carousels 
+
+// setupCarousel('.fashion', '.fashion-prev', '.fashion-next');
+// setupCarousel('.electronic ', '.electronic-prev', '.electronic-next');
+// setupCarousel('.jewelry', '.jewelry-prev', '.jewelry-next');
+
+// function setupCarousel(carouselClass, prevBtnClass, nextBtnClass) {
+//   const carousels = document.querySelectorAll(carouselClass);
+//   const prevSlides = document.querySelectorAll(prevBtnClass);
+//   const nextSlides = document.querySelectorAll(nextBtnClass);
+
+//   carousels.forEach((carousel, index) => {
+//     const slides = carousel.querySelectorAll('.products-container');
+//     let currentIndex = 0;
+
+//     prevSlides[index].addEventListener('click', () => {
+//       currentIndex--;
+//       if (currentIndex < 0) currentIndex = slides.length - 1;
+//       updateCarousel();
+//     });
+
+//     nextSlides[index].addEventListener('click', () => {
+//       currentIndex++;
+//       if (currentIndex >= slides.length) currentIndex = 0;
+//       updateCarousel();
+//     });
+
+//     function updateCarousel() {
+//       const translateX = -currentIndex * 100;
+//       carousel.style.transform = `translateX(${translateX}%)`;
+//     }
+//   });
+// }
+
+// // Initialize the carousels
+// setupCarousel('.fashion', '.fashion-prev', '.fashion-next');
+// setupCarousel('.electronic', '.electronic-prev', '.electronic-next');
+// setupCarousel('.jewelry', '.jewelry-prev', '.jewelry-next');
+
+
+
+const fashionSlides = document.querySelectorAll('.fashion');
+const electronicSlides = document.querySelectorAll('.electronic');
+const jewelrySlides = document.querySelectorAll('.jewelry');
+
+const fashionPrev = document.querySelector('.fashion-prev');
+const fashionNext = document.querySelector('.fashion-next');
+const electronicPrev = document.querySelector('.electronic-prev');
+const electronicNext = document.querySelector('.electronic-next');
+const jewelryPrev = document.querySelector('.jewelry-prev');
+const jewelryNext = document.querySelector('.jewelry-next');
+
+let currentFashionSlides = 0;
+let currentElectronicSlides = 0;
+let currentJewelrySlides = 0;
+
 
 fashionPrev.addEventListener('click', () => {
   currentFashionSlides--;
@@ -70,13 +186,10 @@ jewelryNext.addEventListener('click', () => {
   updateJewelrySlides();
 });
 
-function updateSlides() {
-  const translateX = -currentSlide * 100;
-  document.querySelector('.slides').style.transform = `translateX(${translateX}%)`;
-}
+
 
 function updateFashionSlides() {
-  console.log(updateFashionSlides);
+  // console.log(updateFashionSlides);
   const translateX = -currentFashionSlides * 100;
   const carouselWrapper = document.querySelector('.carousel-wrapper');
   if (carouselWrapper) {
@@ -100,13 +213,7 @@ function updateJewelrySlides() {
   }
 }
 
-function autoplay() {
-  currentSlide++;
-  if (currentSlide >= slides.length) currentSlide = 0;
-  updateSlides();
-}
 
-let autoplayTimer = setInterval(autoplay, autoplayInterval); // Start autoplay
 
 
 // const currentSlides = {

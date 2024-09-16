@@ -27,10 +27,19 @@
     <!-- hamburger-icon -->
 
     <div class="hamburger">
-      <div class="hamburger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="harmburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <p class="closebtn" onclick="toggleMenu()">&times</p>
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
+          <li><a href="./fashion.html" target="_self" onclick="toggleMenu()">Fashion</a></li>
+          <li><a href="./electronic.html" target="_self" onclick="toggleMenu()">Electronic</a></li>
+          <li><a href="./jewelry.html" onclick="toggleMenu()">Jewelry</a></li>
+        </div>
       </div>
 
       <div class="dropdown-menu">
@@ -56,11 +65,11 @@
 
       <div class="search-box">
         <input type="search" id="search" placeholder="Search this blog" />
-        <div class="search-icon">
+        <!-- <div class="search-icon">
           <div class="search-icon-image">
             <img src="./images/search-icon.png">
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="dropdown-menu2">
@@ -130,7 +139,7 @@
     </div>
 
     <div class="buy-button-container">
-    <button class="buy-button">BUY NOW</button>
+    <button type="button" class="buy-button">BUY NOW</button>
     </div>
 
     <!-- Hero Heading -->
@@ -353,7 +362,7 @@
     </div>
 
     <div class="product-carousel">
-      <div class="carousel-wrapper jewelrys">
+      <div class="carousel-wrapper">
         <div class="products-container jewelry">
           <div class="products">
             <div class="products-list">
@@ -441,12 +450,25 @@
       <button class="nextt-button jewelry-next">&#10096</button>
     </div>
 
+<!-- animated loading ----------------------------------------------------------------- -->
+
+    <div class="load">
+        <div class="loading">
+
+        </div>
+    </div>
+
+<!-- animated loading ----------------------------------------------------------------- -->
+
     <!-- footer section -->
 
     <div class="footer-section">
       <h4 class="footer-head">Xponential</h4>
-      <input type="email" id="email" placeholder="Your E-mail">
-      <span class="footer-span"><a href="#">SUBSCRIBE</a></span><hr>
+     <div class="sub">
+        <input type="email" id="email" placeholder="Your E-mail">
+        <a href="#">SUBSCRIBE</a>
+      </div>
+      <hr>
         <ul class="footer-nav">
           <li><a href="#">Best Sellers</a></li>
           <li><a href="#">Gift Ideas</a></li>
@@ -454,8 +476,8 @@
           <li><a href="#">Today's Deals</a></li>
           <li><a href="#">Customer Service</a></li>
         </ul>
-        <p class="footer-paragraph">Help Line Number: <a href="https://wa.me/+2348139748033">+234 813 974 8033</a></p>
-        <p class="footer-statement">© 2020 All Rights Reserved. Design by Xp Devs</p>
+      <p class="footer-paragraph">Help Line Number: <a href="https://wa.me/+2348139748033">+234 813 974 8033</a></p>
+      <p class="footer-statement">© 2020 All Rights Reserved. Design by Xp Devs</p>
     </div>
 
     <script src="./script.js"></script>

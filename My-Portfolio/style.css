@@ -116,6 +116,7 @@ a:hover {
     list-style: none;
 }
 
+
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(7px, 5px);
 }
