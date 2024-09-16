@@ -68,7 +68,7 @@ jewelryNext.addEventListener('click', () => {
 
 function updateJewelrySlides() {
     const translateX = -currentJewelrySlides * 100;
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    const carouselWrapper = document.querySelector('.carousel-wrapper-jewelry');
     if (carouselWrapper) {
       carouselWrapper.style.transform = `translateX(${translateX}%)`;
     }

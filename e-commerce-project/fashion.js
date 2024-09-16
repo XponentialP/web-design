@@ -69,7 +69,7 @@ fashionNext.addEventListener('click', () => {
 function updateFashionSlides() {
     // console.log(updateFashionSlides);
     const translateX = -currentFashionSlides * 100;
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    const carouselWrapper = document.querySelector('.carousel-wrapper-fashion');
     if (carouselWrapper) {
       carouselWrapper.style.transform = `translateX(${translateX}%)`;
     }

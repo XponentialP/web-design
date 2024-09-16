@@ -68,7 +68,7 @@ electronicNext.addEventListener('click', () => {
 
 function updateElectronicSlides() {
     const translateX = -currentElectronicSlides * 100;
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    const carouselWrapper = document.querySelector('.carousel-wrapper-electronic');
     if (carouselWrapper) {
       carouselWrapper.style.transform = `translateX(${translateX}%)`;
     }
